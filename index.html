@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="heading">
+    <h1 id=title>What Kind of Traveler Are You?</h1>
+    <p id="description">Do you dream of travel? Beach or museum? Why not both? It's a big world out there!</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="name-label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="email-label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="number-label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="how old are you?">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="dropdown-label"><strong>Where do you live?: </strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="CN">Canada</option>
+                <option value="US">United States</option>
+                <option value="UK">United Kingdom</option>
+                <option value="IR">Ireland</option>
+                <option value="AU">Australia</option>
+                <option value="NZ">New Zealand</option>
+                <option value="EU">Europe</option>
+                <option value="UN">Somewhere Else</option>
+            </select>
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="job-label"><b>How well-traveled are you?:</b></label><br>
+            <input type="radio" class="radio-inline" name="experience" value="novice" checked> I haven't been many places.<br>
+            <input type="radio" class="radio-inline" name="experience" value="some"> I've explored areas near me.<br>
+            <input type="radio" class="radio-inline" name="experience" value="traveler"> I've seen most of my own country.<br>
+            <input type="radio" class="radio-inline" name="experience" value="seasoned"> I've traveled internationally.
+          </div>
+          <div id="button-area"><br>
+            <label id="os-label"><b>Who do you travel with? (check all that apply): </b></label><br>
+            <input type="checkbox" name="s1" value="light" checked> I'm an independent traveler.<br>
+            <input type="checkbox" name="s2" value="medium"> I travel mostly with my partner or a close friend.<br>
+            <input type="checkbox" name="s3" value="heavy"> The whole family comes along.<br>
+          </div>
+
+          <div id="dropdown"><br><br>
+            <label id="dropdown-label"><strong>The main reason I want to travel: </strong></label><br>
+            <select id="dropdown" name="places" class="form"><br><br>
+                <option value="beach">Relax on a beach</option>
+                <option value="eat">Cafes/Restaurants</option>
+                <option value="culture">Museums/Cultural Attractions</option>
+                <option value="entertainment">Concerts/Performances</option>
+                <option value="health">Fitness/Health</option>
+                <option value="others">See friends/family</option>
+                <option value="escape">Escape from it all (camping, etc.)</option>
+                <option value="romantic">Romantic getaway</option>
+                <option value="education">Education/learning</option>
+            </select>
+         </div>
+          <div id="button-area"><br><br>
+            <label id="os-label"><b>Favourite Mode of Travel:</b></label><br>
+            <input type="checkbox" name="mode1" value="fly"> Airplane<br>
+            <input type="checkbox" name="mode2" value="rail"> Railway<br>
+            <input type="checkbox" name="mode3" value="car"> Automobile<br>
+            <input type="checkbox" name="mode3" value="bike"> Bicycle<br>
+            <input type="checkbox" name="mode3" value="ship"> Ferry/Ship<br>
+          </div>
+
+
+          <div id="ending"><br><br>
+            <label id="comments-label">Describe your dream vacation...</label><br>
+            <textarea style= height:120px;" class="form" placeholder="My ideal vacation is..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+    </div>
+
+</body>
+</html>
